@@ -1,5 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+.bg-first-section {
+  background-color: #120F2D;
+}
+
+.brand-icon {
+  font-size: 20px !important;
+}
+
+.left-part {
+  font-size: 18px !important;
+}
 
 /*# sourceMappingURL=style.css.map */
