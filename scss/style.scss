@@ -1,9 +1,14 @@
-$navbar-nav-link-padding-x: 2rem !important;
 $font-family-sans-serif: 'Open Sans', sans-serif;
+$secondary: #F14D5D;
+$light: #ECF4FF;
+$input-border-color: white;
+$input-border-radius: none;
 
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;600&display=swap');
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../node_modules/glider-js/glider.min.css";
 
 
 .bg-first-section {
@@ -16,4 +21,367 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 
 .left-part {
     font-size: 18px !important;
+}
+
+.nav-item a {
+    font-size: 18px;
+    color: black;
+}
+
+.collapse {
+    .btn {
+        border-radius: 0 !important;
+        
+    }
+} 
+
+.hero-background {
+    background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/header.jpg), no-repeat center;height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.hero-description {
+    overflow: hidden;
+
+    .hero-first-line {
+        color: white;
+        font-size: 35px;
+    }
+
+    .hero-second-line {
+        color: white;
+        font-size: 90px;
+    }
+}
+.hero-input-btn {
+    width: 100% !important;
+    max-width: 600px !important;
+
+    .dropdown-toggle:hover {
+        background-color: white;
+    }
+
+}
+
+
+    
+
+    .hero-img {
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+// About Us
+
+.about-description {
+    span {
+        border-bottom: 2px dashed black;
+        display: inline-block;
+        color: #F14D5D;
+        font-weight: bold;
+        border-color: #F14D5D;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    p {
+        line-height: 1.5;
+        color: #6B6A75;
+    }
+
+    .count-up {
+        padding: 11px 5px;
+        font-family: 'Jost', sans-serif;
+        color: white;
+
+        div:nth-child(1) {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+// Why choose us?
+
+.bg-whyChooseUs {
+    background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/bg-image.jpg);
+    background-attachment: fixed;
+}
+
+.why-choose-description {
+    span {
+        border-bottom: 2px dashed black;
+        display: inline-block;
+        color: #F14D5D;
+        font-weight: bold;
+        border-color: #F14D5D;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    p {
+        line-height: 1.5;
+        color: #6B6A75;
+    }
+}
+
+.why-choose-img {
+    img {
+        object-fit: cover;
+    }
+
+    
+}
+
+.why-choose-icon {
+    width: 77px;
+    height: 77px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+// Our Courses
+
+.courses-description {
+    span {
+        border-bottom: 2px dashed black;
+        display: inline-block;
+        color: #F14D5D;
+        font-weight: bold;
+        border-color: #F14D5D;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
+
+// Courses
+.glider-main-item {
+    height: calc(100% + 86px) !important;
+    padding-top: 86px;
+}
+
+.glider-item {
+    overflow: visible;
+    height: 100%;
+}
+
+.glider-item-img {
+    transition: 0.5s ease-in-out;
+}
+
+.glider-description {
+    height: calc(100% + 86px);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: white;
+    display: felx !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, rgba(18, 15, 45, 0), #120f2d);
+    transition: 0.5s ease-in-out;
+}
+
+.glider-first-description {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+}
+
+.glider-second-description {
+    border-top: 1px solid white;
+    justify-content: space-between !important;
+}
+
+.glider-item:hover .glider-item-img {
+    transform: translateY(-86px)
+}
+
+.glider-item:hover .glider-description {
+    transform: translateY(-86px)
+}
+
+//promotion
+
+.bg-promotion {
+    background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/bg-image.jpg);
+    background-attachment: fixed;
+    min-height: 520px;
+    div {
+        color: #F14D5D;
+    }
+}
+
+.custom-select {
+    width: 100%;
+    height: auto;
+}
+
+// instructor
+
+.instructors-description {
+    span {
+        border-bottom: 2px dashed black;
+        display: inline-block;
+        color: #F14D5D;
+        font-weight: bold;
+        border-color: #F14D5D;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
+
+.card .card-body .name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+}
+
+.glider-prev {
+    opacity: 1 !important;
+    position: absolute;
+    background: #2878EB;
+    z-index: 2;
+    padding: 20px 25px;
+    font-size: 40px;
+    text-decoration: none;
+    left: -4px !important;
+    top: 50% !important;
+    cursor: pointer;
+    color: #ffff !important;
+    line-height: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.glider-next {
+    opacity: 1 !important;
+    position: absolute;
+    background: #2878EB;
+    z-index: 2;
+    padding: 20px 25px;
+    font-size: 40px;
+    text-decoration: none;
+    right: -4px !important;
+    top: 50% !important;
+    cursor: pointer;
+    color: #ffff !important;
+    line-height: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.glider-prev:hover,
+.glider-next:hover {
+  background-color: #F14D5D !important;
+}
+
+
+// for responsive
+
+@media screen and (max-width: 1019px) {
+    .hero-first-line {
+        font-size: 25px !important;
+    }
+
+    .hero-second-line {
+        font-size: 70px !important;
+    }
+
+    .hero-background {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-description {
+        h1 {
+            font-size: 48px !important;
+            font-weight: bold !important;
+        }
+    }
+
+    .why-choose-description {
+        h1 {
+            font-size: 48px !important;
+            font-weight: bold !important;
+        }
+    }
+
+    .courses-description {
+        h1 {
+            font-size: 48px !important;
+            font-weight: bold !important;
+        }
+    }
+
+    .instructors-description {
+        h1 {
+            font-size: 48px !important;
+            font-weight: bold !important;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-first-line {
+        font-size: 25px !important;
+    }
+
+    .hero-second-line {
+        font-size: 45px !important;
+    }
+
+    .hero-background {
+        height: 550px;
+    }
+
+    .about-description {
+        h1 {
+            font-size: 35px !important;
+            font-weight: bold !important;
+        }
+    }
+
+    .why-choose-description {
+        h1 {
+            font-size: 35px !important;
+            font-weight: bold !important;
+        }
+    }
+
+    .courses-description {
+        h1 {
+            font-size: 35px !important;
+            font-weight: bold !important;
+        }
+    }
+
+    .instructors-description {
+        h1 {
+            font-size: 35px !important;
+            font-weight: bold !important;
+        }
+    }
 }

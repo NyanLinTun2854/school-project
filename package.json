@@ -19,6 +19,9 @@
   "homepage": "https://github.com/NyanLinTun2854/school-project#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.2",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "counterup2": "^2.0.2",
+    "glider-js": "^1.7.7",
+    "waypoints": "^4.0.1"
   }
 }
